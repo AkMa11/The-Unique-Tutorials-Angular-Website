@@ -1,0 +1,56 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+header {
+  display: grid;
+  grid-template-areas: "logo nav";
+  grid-template-columns: 40% 60%;
+  height: 10vh;
+}
+
+header img {
+  grid-area: logo;
+  display: grid;
+  justify-self: start;
+  padding-left: 1em;
+  width: auto;
+  height: 100%;
+}
+
+nav {
+  grid-area: nav;
+  display: grid;
+  justify-content: end;
+  align-self: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav a {
+  font-size: 0.9vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #4b4b4b;
+  text-align: center;
+  padding: 1em;
+  opacity: 0.6;
+  text-decoration: none;
+  background-color: none;
+  border-bottom: 1px solid white;
+  transition: all 0.5s ease;
+}
+
+nav a:hover:not(.active_nav) {
+  background-color: white;
+  opacity: 1;
+}
+
+nav a:hover:not(.active_nav)::after {
+  background-color: none;
+  transition: background-color 1s ease-out;
+}
+
+.active_nav {
+  opacity: 1;
+  font-weight: 500;
+  background-color: #ffffff70;
+  border-bottom: 3px solid white;
+}

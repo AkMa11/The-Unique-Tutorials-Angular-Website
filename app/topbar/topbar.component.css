@@ -1,0 +1,19 @@
+.top {
+  display: grid;
+  grid-column: 1fr 1fr;
+  grid-template-areas: "icon p";
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #4b4b4b;
+  align-self: center;
+  grid-area: p;
+  display: grid;
+  padding-left: 0.5em;
+}
+
+#icon {
+  grid-area: icon;
+  display: grid;
+  justify-self: end;
+}

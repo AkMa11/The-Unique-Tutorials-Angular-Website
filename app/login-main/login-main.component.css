@@ -1,0 +1,21 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  background: #ffffff20;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 #00000016;
+  padding: 5vh;
+}
+
+#form button {
+  border-radius: 0.5em;
+  height: 4vh;
+  font-size: 1em;
+  background-color: #2794c7;
+}

@@ -1,0 +1,33 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  background: #ffe9e9;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 20px 0 #00000016;
+}
+
+aside p {
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #707070;
+}
+
+aside > *:not(p) {
+  width: 100%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff95;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+#form button {
+  border-radius: 5px;
+  background-color: #2794c7;
+}

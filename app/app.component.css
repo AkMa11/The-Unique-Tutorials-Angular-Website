@@ -1,0 +1,32 @@
+#container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "top"
+    "head"
+    "main"
+    "footer";
+  grid-template-rows: 3vh 10vh auto 3vh;
+}
+
+#top {
+  grid-area: top;
+  background: #00000015;
+}
+
+#head {
+  grid-area: head;
+}
+
+#main {
+  grid-area: main;
+  /* padding: 0 1em 0 1em; */
+  padding: 0 1em;
+  display: grid;
+  /* place-content: center; */
+}
+
+#footer {
+  grid-area: footer;
+  background: #00000015;
+}

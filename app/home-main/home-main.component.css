@@ -1,0 +1,27 @@
+.carousel,
+.carousel-inner,
+.carousel-item {
+  border-radius: 1em;
+  box-shadow: 0 0 20px 0 #00000010;
+}
+
+#container {
+  display: grid;
+  grid-template-areas:
+    "main aside"
+    "main cta";
+  grid-template-columns: 70% auto;
+  grid-gap: 1em;
+}
+
+main {
+  grid-area: main;
+}
+
+#aside {
+  grid-area: aside;
+}
+
+#cta {
+  grid-area: cta;
+}

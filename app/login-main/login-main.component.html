@@ -1,0 +1,16 @@
+<main>
+  <div id="form">
+    <mat-form-field hideRequiredMarker>
+      <input id="textEmail" matInput type="email" placeholder="Email" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field hideRequiredMarker>
+      <input id="textPassword" matInput placeholder="Password" [formControl]="pass" required>
+      <mat-error *ngIf="pass.hasError('required')">Please enter your password</mat-error>
+    </mat-form-field>
+    <!-- <div class="alert alert-danger text-center" role="alert">
+      The Email or Password is wrong
+    </div> -->
+    <button mat-raised-button color="primary" (click)="openSnackBar()" aria-label="Show an example snack-bar">Login</button>
+  </div>
+</main>
